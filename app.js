@@ -1,14 +1,9 @@
-/* Importing the express module. */
 const express = require("express");
-
-/* Creating an instance of the express module. */
 const app = express();
-
-/* Setting the port to 3000. */
 const port = "3000";
-
-/* Importing the database.js file. */
+const sequelize = require("./database");
 const database = require("./database");
+import User from "./models/user";
 
 /* Router for pages */
 app.get("/", (req, res) => {
