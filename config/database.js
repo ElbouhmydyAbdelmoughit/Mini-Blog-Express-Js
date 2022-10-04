@@ -1,20 +1,16 @@
-/* Importing the Sequelize class from the sequelize module. */
 const Sequelize = require("sequelize");
-
-/* Create connection */
 const db = new Sequelize("miniblog", "root", "", {
   host: "localhost",
   dialect: "mysql",
 });
 
-/* Testing Connection are you working  */
+/* Connecting to the database. */
 db.authenticate()
   .then(() => {
-    console.log("Connection has been established successfully.");
+    console.log("Database Connected");
   })
-  .catch((err) => {
-    console.error("Unable to connect to the database:", err);
+  .catch(() => {
+    (error) => console.log(" Database Not Connected " + error);
   });
 
-/* Exporting the db object so that it can be used in other files. */
 module.exports = db;
