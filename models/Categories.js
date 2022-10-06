@@ -1,10 +1,10 @@
-const Sequelize = require("sequelize");
-const db = require("../config/database.js");
+let Sequelize = require('sequelize')
+let db = require('../config/db')
+const Categorie = db.define('categories', {
+    title: {
+        type: Sequelize.STRING,
+        allowNull: false,
+    },
+})
+module.exports = Categorie;
 
-const Categories = db.define("Categories", {
-  name: {
-    type: Sequelize.STRING,
-  },
-});
-
-module.exports = Categories;

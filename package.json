@@ -1,30 +1,19 @@
 {
+  "name": "blog-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "lahlali",
+  "license": "ISC",
   "dependencies": {
-    "config.json": "^0.0.4",
-    "cors": "^2.8.5",
+    "body-parser": "^1.20.0",
     "express": "^4.18.1",
-    "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
     "nodemon": "^2.0.20",
-    "sequelize": "^6.23.2"
-  },
-  "name": "mini-blog",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ElbouhmydyAbdelmoughit/Mini-Blog-Express-Js.git"
-  },
-  "keywords": [],
-  "author": "Elbouhmydy Abdelmoughit <elbouhmydyabdelmoughit@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ElbouhmydyAbdelmoughit/Mini-Blog-Express-Js/issues"
-  },
-  "homepage": "https://github.com/ElbouhmydyAbdelmoughit/Mini-Blog-Express-Js#readme",
-  "description": ""
+    "sequelize": "^6.24.0"
+  }
 }
